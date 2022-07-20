@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto p2p">
+    <meta name="keywords"  content="Contacto, nombre, edad, número, instagram, turno, formulario">
+
+    <title>Contacto</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="contactoFondo">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link-active" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./historia.html">Historia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="row justify-content-around">
+            <img class="col-4 img-fluid m-2" src="../img/TEO SEVERINI ROJO BLANCO (2).png" alt="">
+        </div>
+    </header>
+    <main>
+        <form action="form">
+            <h2>Contacto</h2>
+            <input type="text" name="Nombre" id="Nombre" 
+            placeholder="Nombre y Apellido" required>
+            <input type="text" name="Edad" id="Edad"
+            placeholder="Edad">
+            <input type="text" name="Número de teléfono" id="Número de teléfono" 
+            placeholder="Número de teléfono" required>
+            <input type="text" name="Instagram" id="Instagram" 
+            placeholder="Instagram" required>
+            <br>
+            <div>
+            <h5 class="horariodiaTurno">Día y horario del turno</h5>
+            <input type="datetime-local" name="disponibilidad horaria" id="disponibilidad horaria" placeholder="disponibilidad horaria">
+            <p class="horarioSolicitado">Puedo aceptar un turno en
+            un día y horario similar al solicitado</p>
+            <input type="checkbox" name="Puedo aceptar un turno en un día y horario similar al solicitado" id="">
+            </div>
+            <br>
+            <div>
+            <select name="servicio a realizar">
+                <option value="Corte">Corte</option>
+                <option value="Barba">Barba</option>
+                <option value="Corte y Barba">Corte y Barba</option>
+                <option value="Claritos y Corte">Claritos y Corte</option>
+                <option value="Global y Corte">Global y Corte</option>
+            </select>
+            </div>
+                <br>
+            <div>
+            <textarea name="Notas para tener en cuenta" id="" cols="30" rows="10">Información extra (opcional)</textarea>
+            </div>
+           <br>
+            <input class="botonEnviar" type="submit" value="Enviar">
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        <h5>©2022 Teo Severini, todos los derechos reservados</h5>
+    </footer>
+</body>
+</html>

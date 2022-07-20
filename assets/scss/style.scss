@@ -1,0 +1,230 @@
+body{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(159, 0, 0));
+}
+
+.títuloServicios{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(34, 27, 27);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 760px;
+    margin-right: 760px;
+}
+
+.títuloHistoria{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(34, 27, 27);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: fit-content;
+}
+
+.subtítulo{
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(34, 27, 27);
+}
+
+h5{
+    font-size: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;   
+}
+div img{
+    width: 240px;
+}
+
+tr{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+table{
+    margin: 10px 500px;
+}
+
+.tarjeta{
+    width: 300px;
+    margin: 10px;
+    background-color: rgb(64, 51, 51);
+}
+
+h4{
+    color: white;
+    text-align: center;
+}
+
+.tarjeta__img{
+    width: 100%;
+}
+
+.contenedorCajas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-content: space-evenly;
+    justify-content: space-between;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @mixin horizontal-list {
+    @include reset-list;
+  
+    li {
+      display: inline-block;
+      margin: {
+        left: -2px;
+        right: 2em;
+      }
+    }
+  }
+  
+  nav ul {
+    @include horizontal-list;
+  }
+
+.caja{
+    background-color: rgb(64, 51, 51);
+    padding: 20px 30px 20px 30px;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 10px;
+    transition:all 1s
+}
+
+.caja1:hover{
+    padding: 60px;
+}
+.caja2:hover{
+    padding: 60px
+}
+.caja3:hover{
+    padding: 60px
+}
+.caja4{
+    padding: 20px 30px 20px 30px;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 10px;
+    transform: translate(600px);
+    transition: 1s;
+    &:hover{
+        translate: (20px 20px) scale(2);
+        padding: 40px 60px 40px 60px;
+    }
+}
+
+.contactoFondo{
+    background-color: crimson;
+
+}
+
+.horariodiaTurno{
+    text-align: left;
+}
+
+table{
+    background-color: rgb(93, 31, 31);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center ;
+}
+
+.logo{
+    display: flex;
+    size: 2px;
+}
+
+.h6{
+    color: white;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.horarioSolicitado{
+    font-size: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.botonEnviar{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+nav{
+    background-image: linear-gradient(#9f0000, black ); 
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link-active{
+    color: rgb(193, 104, 2);
+}
+
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+.historia{
+    padding: 10px 670px;
+}
